@@ -2,10 +2,7 @@ const express = require('express');
 const app = express();
 const port = 8080;
 
-// Serve the image file instead of the text
-app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/desktop/cloud.jpg'); // Replace 'path_to_your_image.jpg' with the actual path to your image file
-});
+app.get('/', (req, res) => res.send('CumulusCodex'));
 
 app.listen(port);
 console.log(`App running on http://localhost:${port}`);
